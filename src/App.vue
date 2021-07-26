@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <rux-toggle
+        id="app-toggle"
+        :checked="toggle"
+        @click.prevent="toggle = !toggle"></rux-toggle> {{ toggle }}
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  computed: {
+    toggle: {
+      get() {
+        return this.$store.state.toggle
+      },
+      set(value) {
+        this.$store.commit('setToggle', value)
+      }
+    }
   }
 }
 </script>
 
 <style>
+@import '/assets/css/astro.core.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
