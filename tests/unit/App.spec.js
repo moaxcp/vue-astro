@@ -1,5 +1,5 @@
 import Vuex from 'vuex';
-import {createLocalVue, shallowMount} from '@vue/test-utils';
+import {createLocalVue, mount} from '@vue/test-utils';
 import storeConfig from '@/store'
 import App from '@/App'
 
@@ -12,12 +12,11 @@ describe("App", () => {
     localVue = createLocalVue();
     localVue.use(Vuex);
     store = new Vuex.Store(storeConfig);
-    wrapper = shallowMount(App, {store, localVue});
+    wrapper = mount(App, {store, localVue});
   });
 
-  it("test toggle", () => {
+  it("test toggle default", () => {
     const result = wrapper.find('#app-toggle').checked;
-    const expected = store.getToggle;
-    expect(result).toEqual(expected);
+    expect(result).toEqual(true);
   })
 })
