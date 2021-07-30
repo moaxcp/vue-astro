@@ -16,7 +16,7 @@ describe("App", () => {
   });
 
   it("test toggle default", () => {
-    const result = wrapper.find('#app-toggle').checked;
-    expect(result).toEqual(true);
+    const result = wrapper.find('#app-toggle').attributes('checked');
+    expect(result).toEqual('true');
   })
 })
