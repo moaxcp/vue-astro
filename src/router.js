@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AstroComponents from '@/views/AstroComponents'
+import ButtonGuide from '@/components/ButtonGuide'
+import SwitchGuide from '@/components/SwitchGuide'
+import Welcome from '@/views/Welcome'
 
 Vue.use(Router)
 
@@ -9,8 +11,18 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      name: 'welcome',
+      component: Welcome
+    },
+    {
+      path: '/button',
       name: 'button',
-      component: AstroComponents
+      component: ButtonGuide
+    },
+    {
+      path: '/switch',
+      name: 'switch',
+      component: SwitchGuide
     }
   ]
 })
