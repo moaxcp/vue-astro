@@ -9,7 +9,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'components',
+      name: 'button',
       component: AstroComponents
     }
   ]

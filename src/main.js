@@ -4,6 +4,10 @@ import storeConfig from '@/store'
 import App from './App.vue'
 import router from './router'
 // eslint-disable-next-line no-unused-vars
+import { RuxGlobalStatusBar } from "@astrouxds/rux-global-status-bar/rux-global-status-bar.js";
+// eslint-disable-next-line no-unused-vars
+import { RuxTabs } from "@astrouxds/rux-tabs/rux-tabs.js";
+// eslint-disable-next-line no-unused-vars
 import { RuxToggle } from "@astrouxds/rux-toggle";
 // eslint-disable-next-line no-unused-vars
 import { RuxButton } from "@astrouxds/rux-button/rux-button.js";
