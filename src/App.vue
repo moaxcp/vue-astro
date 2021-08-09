@@ -11,6 +11,4 @@ export default {
 </script>
 
 <style lang="css">
-@import 'assets/css/astro.css';
-@import 'assets/css/astro-icons.css';
 </style>
