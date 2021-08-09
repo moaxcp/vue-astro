@@ -3,8 +3,6 @@ import Vuex from 'vuex'
 import storeConfig from '@/store'
 import App from './App.vue'
 import router from './router'
-import './assets/css/astro.css'
-import './assets/css/astro-icons.css'
 // eslint-disable-next-line no-unused-vars
 import { RuxToggle } from "@astrouxds/rux-toggle";
 // eslint-disable-next-line no-unused-vars

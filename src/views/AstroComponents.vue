@@ -1,5 +1,6 @@
 <template>
   <div>
+    Hello
     <rux-toggle
         id="app-toggle"
         :checked="toggle"

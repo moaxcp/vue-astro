@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class=".lightTheme">
+  <div id="app">
     <router-view :key="$route.fullPath" />
   </div>
 </template>
@@ -10,6 +10,7 @@ export default {
 }
 </script>
 
-<style>
-@import '/src/assets/css/astro.css';
+<style lang="css">
+@import 'assets/css/astro.css';
+@import 'assets/css/astro-icons.css';
 </style>
