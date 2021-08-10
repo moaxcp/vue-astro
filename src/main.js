@@ -4,13 +4,15 @@ import storeConfig from '@/store'
 import App from './App.vue'
 import router from './router'
 // eslint-disable-next-line no-unused-vars
-import { RuxGlobalStatusBar } from "@astrouxds/rux-global-status-bar/rux-global-status-bar.js";
+import { RuxGlobalStatusBar } from "@astrouxds/rux-global-status-bar";
 // eslint-disable-next-line no-unused-vars
-import { RuxTabs } from "@astrouxds/rux-tabs/rux-tabs.js";
+import { RuxTree } from '@astrouxds/rux-tree'
+// eslint-disable-next-line no-unused-vars
+import { RuxTabs } from "@astrouxds/rux-tabs";
 // eslint-disable-next-line no-unused-vars
 import { RuxToggle } from "@astrouxds/rux-toggle";
 // eslint-disable-next-line no-unused-vars
-import { RuxButton } from "@astrouxds/rux-button/rux-button.js";
+import { RuxButton } from "@astrouxds/rux-button";
 
 Vue.config.productionTip = false
 

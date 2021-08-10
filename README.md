@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Notes:
+
+`rux-tree` requires `rux-utils` This should be declared as a dependency in `rux-tree`.

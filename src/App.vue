@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <rux-global-status-bar appname="Astro App" version="3.0">
+    <rux-global-status-bar appname="Astro Vue" version="1.0">
       <rux-tabs id="tab-set-id-1">
         <rux-tab v-for="route in this.$router.getRoutes()"
             :key="route.name"
             :id="`tab-id-${route.name}`"
             @click="select(route.name)"
-            :selected="isSelected">{{ route.name }}</rux-tab>
+            :selected="isSelected(route.name)">{{ route.name }}</rux-tab>
       </rux-tabs>
     </rux-global-status-bar>
 

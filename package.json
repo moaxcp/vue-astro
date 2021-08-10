@@ -18,6 +18,8 @@
     "@astrouxds/rux-status": "4.0.3",
     "@astrouxds/rux-tabs": "^5.0.2",
     "@astrouxds/rux-toggle": "4.0.3",
+    "@astrouxds/rux-tree": "^5.0.1",
+    "@astrouxds/rux-utils": "^4.0.4",
     "core-js": "^3.6.5",
     "vue": "^2.6.14",
     "vue-router": "^3.5.2",
