@@ -2,7 +2,7 @@
   <div id="app">
     <rux-global-status-bar appname="Astro Vue" version="1.0">
       <rux-tabs id="tab-set-id-1">
-        <rux-tab v-for="route in this.$router.getRoutes()"
+        <rux-tab v-for="route in this.getTabRoutes()"
             :key="route.name"
             :id="`tab-id-${route.name}`"
             @click="select(route.name)"
@@ -11,7 +11,7 @@
     </rux-global-status-bar>
 
     <rux-tab-panels aria-labelledby="tab-set-id-1">
-      <rux-tab-panel v-for="route in this.$router.getRoutes()"
+      <rux-tab-panel v-for="route in this.getTabRoutes()"
                      :key="route.name"
                      :aria-labelledby="`tab-id-${route.name}`">
         <router-view :key="$route.fullPath" />
@@ -21,14 +21,16 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'App',
-  mounted() {
-
-  },
   methods: {
+    getTabRoutes() {
+      return this.$router.getRoutes().filter(r => !r.parent);
+    },
     isSelected(name) {
-      return this.$route.name == name;
+      return this.$route.fullPath.includes(name.toLowerCase());
     },
     select(name) {
       this.$router.push({ name: name }).catch(()=>{});
