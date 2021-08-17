@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/vue-astro/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/vue-astro/'
+        : '/'
 }
