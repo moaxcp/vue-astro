@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div>
+  <div class="main-container">
+    <div class="sidebar-menu">
       <rux-tree :data="JSON.stringify(this.treeConfig)" v-on:tree-updated="componentSeleted"></rux-tree>
     </div>
-    <div>
+    <div class="guide-container">
       <router-view :key="$route.fullPath" />
     </div>
   </div>
@@ -45,5 +45,15 @@ export default {
 </script>
 
 <style scoped>
+.main-container {
+  display: flex;
+}
 
+.sidebar-menu {
+  flex: 1;
+}
+
+.guide-container {
+  flex: 6;
+}
 </style>
