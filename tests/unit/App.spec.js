@@ -1,7 +1,7 @@
 import Vuex from 'vuex';
 import {createLocalVue, mount} from '@vue/test-utils';
 import storeConfig from '@/store'
-import App from '@/App'
+import SwitchGuide from '@/views/guide/SwitchGuide'
 
 describe("App", () => {
   let localVue;
@@ -12,7 +12,7 @@ describe("App", () => {
     localVue = createLocalVue();
     localVue.use(Vuex);
     store = new Vuex.Store(storeConfig);
-    wrapper = mount(App, {store, localVue});
+    wrapper = mount(SwitchGuide, {store, localVue});
   });
 
   it("test toggle default", () => {
