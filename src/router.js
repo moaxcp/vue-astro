@@ -5,6 +5,7 @@ import ExampleGuides from "@/views/ExampleGuides"
 import Welcome from '@/views/Welcome'
 import ButtonGuide from "@/views/guide/ButtonGuide";
 import SwitchGuide from "@/views/guide/SwitchGuide";
+import IconGuide from "@/views/guide/IconGuide";
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ const router = new Router({
           path: 'switch',
           name: 'Switch',
           component: SwitchGuide
+        },
+        {
+          path: 'icon',
+          name: 'Icon',
+          component: IconGuide
         }
       ]
     },

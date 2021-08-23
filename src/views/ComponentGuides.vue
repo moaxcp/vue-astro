@@ -30,6 +30,11 @@ export default {
           label: "Switch",
           status: "critical",
           selected: selected == 'Switch'
+        },
+        {
+          label: "Icon",
+          status: "critical",
+          selected: selected == 'Icon'
         }
       ]
     }
